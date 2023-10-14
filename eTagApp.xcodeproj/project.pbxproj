@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074BB4B52AD114AD004B3648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4B42AD114AD004B3648 /* AppDelegate.swift */; };
+		074BB4B72AD114AD004B3648 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4B62AD114AD004B3648 /* SceneDelegate.swift */; };
+		074BB4B92AD114AD004B3648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4B82AD114AD004B3648 /* ViewController.swift */; };
+		074BB4BC2AD114AD004B3648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074BB4BA2AD114AD004B3648 /* Main.storyboard */; };
+		074BB4BE2AD114AE004B3648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074BB4BD2AD114AE004B3648 /* Assets.xcassets */; };
+		074BB4C12AD114AE004B3648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074BB4BF2AD114AE004B3648 /* LaunchScreen.storyboard */; };
+		074BB4CC2AD114AF004B3648 /* eTagAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4CB2AD114AF004B3648 /* eTagAppTests.swift */; };
+		074BB4D62AD114AF004B3648 /* eTagAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4D52AD114AF004B3648 /* eTagAppUITests.swift */; };
+		074BB4D82AD114AF004B3648 /* eTagAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4D72AD114AF004B3648 /* eTagAppUITestsLaunchTests.swift */; };
+		595F1F5A31AD288CB28232D9 /* Pods_eTagApp_eTagAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E6A2613BFF069BB5D4C8C /* Pods_eTagApp_eTagAppUITests.framework */; };
+		BE92881893FB2451AA0068C9 /* Pods_eTagApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19A5205736A67264E808740 /* Pods_eTagApp.framework */; };
+		F0E595C7834B82D139BFA462 /* Pods_eTagAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E196448448F35E30C7810E0 /* Pods_eTagAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		074BB4C82AD114AF004B3648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074BB4A92AD114AD004B3648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074BB4B02AD114AD004B3648;
+			remoteInfo = eTagApp;
+		};
+		074BB4D22AD114AF004B3648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074BB4A92AD114AD004B3648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074BB4B02AD114AD004B3648;
+			remoteInfo = eTagApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		074BB4B12AD114AD004B3648 /* eTagApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eTagApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		074BB4B42AD114AD004B3648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		074BB4B62AD114AD004B3648 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		074BB4B82AD114AD004B3648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		074BB4BB2AD114AD004B3648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		074BB4BD2AD114AE004B3648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		074BB4C02AD114AE004B3648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		074BB4C22AD114AE004B3648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074BB4C72AD114AF004B3648 /* eTagAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eTagAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		074BB4CB2AD114AF004B3648 /* eTagAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTagAppTests.swift; sourceTree = "<group>"; };
+		074BB4D12AD114AF004B3648 /* eTagAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eTagAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		074BB4D52AD114AF004B3648 /* eTagAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTagAppUITests.swift; sourceTree = "<group>"; };
+		074BB4D72AD114AF004B3648 /* eTagAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eTagAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		080DCE2A1BDEBA66B136717B /* Pods-eTagApp-eTagAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagApp-eTagAppUITests.release.xcconfig"; path = "Target Support Files/Pods-eTagApp-eTagAppUITests/Pods-eTagApp-eTagAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2AE6203729B1A95AEC7C86BE /* Pods-eTagApp-eTagAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagApp-eTagAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-eTagApp-eTagAppUITests/Pods-eTagApp-eTagAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		56B2ED7E13C1BB6D5088FB4C /* Pods-eTagApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagApp.debug.xcconfig"; path = "Target Support Files/Pods-eTagApp/Pods-eTagApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5E196448448F35E30C7810E0 /* Pods_eTagAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTagAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8255535FF98FB1E0812105 /* Pods-eTagAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagAppTests.release.xcconfig"; path = "Target Support Files/Pods-eTagAppTests/Pods-eTagAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F6E6A2613BFF069BB5D4C8C /* Pods_eTagApp_eTagAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTagApp_eTagAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2902466D2E96EE947DB159F /* Pods-eTagAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagAppTests.debug.xcconfig"; path = "Target Support Files/Pods-eTagAppTests/Pods-eTagAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C98E24A67C080AD257C3356B /* Pods-eTagApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagApp.release.xcconfig"; path = "Target Support Files/Pods-eTagApp/Pods-eTagApp.release.xcconfig"; sourceTree = "<group>"; };
+		F19A5205736A67264E808740 /* Pods_eTagApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTagApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074BB4AE2AD114AD004B3648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE92881893FB2451AA0068C9 /* Pods_eTagApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074BB4C42AD114AF004B3648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E595C7834B82D139BFA462 /* Pods_eTagAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074BB4CE2AD114AF004B3648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595F1F5A31AD288CB28232D9 /* Pods_eTagApp_eTagAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074BB4A82AD114AD004B3648 = {
+			isa = PBXGroup;
+			children = (
+				074BB4B32AD114AD004B3648 /* eTagApp */,
+				074BB4CA2AD114AF004B3648 /* eTagAppTests */,
+				074BB4D42AD114AF004B3648 /* eTagAppUITests */,
+				074BB4B22AD114AD004B3648 /* Products */,
+				7AEB28DCE138501B5735A01B /* Pods */,
+				F73F470318124AFEBB9FE17B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		074BB4B22AD114AD004B3648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074BB4B12AD114AD004B3648 /* eTagApp.app */,
+				074BB4C72AD114AF004B3648 /* eTagAppTests.xctest */,
+				074BB4D12AD114AF004B3648 /* eTagAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		074BB4B32AD114AD004B3648 /* eTagApp */ = {
+			isa = PBXGroup;
+			children = (
+				074BB4B42AD114AD004B3648 /* AppDelegate.swift */,
+				074BB4B62AD114AD004B3648 /* SceneDelegate.swift */,
+				074BB4B82AD114AD004B3648 /* ViewController.swift */,
+				074BB4BA2AD114AD004B3648 /* Main.storyboard */,
+				074BB4BD2AD114AE004B3648 /* Assets.xcassets */,
+				074BB4BF2AD114AE004B3648 /* LaunchScreen.storyboard */,
+				074BB4C22AD114AE004B3648 /* Info.plist */,
+			);
+			path = eTagApp;
+			sourceTree = "<group>";
+		};
+		074BB4CA2AD114AF004B3648 /* eTagAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				074BB4CB2AD114AF004B3648 /* eTagAppTests.swift */,
+			);
+			path = eTagAppTests;
+			sourceTree = "<group>";
+		};
+		074BB4D42AD114AF004B3648 /* eTagAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				074BB4D52AD114AF004B3648 /* eTagAppUITests.swift */,
+				074BB4D72AD114AF004B3648 /* eTagAppUITestsLaunchTests.swift */,
+			);
+			path = eTagAppUITests;
+			sourceTree = "<group>";
+		};
+		7AEB28DCE138501B5735A01B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56B2ED7E13C1BB6D5088FB4C /* Pods-eTagApp.debug.xcconfig */,
+				C98E24A67C080AD257C3356B /* Pods-eTagApp.release.xcconfig */,
+				2AE6203729B1A95AEC7C86BE /* Pods-eTagApp-eTagAppUITests.debug.xcconfig */,
+				080DCE2A1BDEBA66B136717B /* Pods-eTagApp-eTagAppUITests.release.xcconfig */,
+				A2902466D2E96EE947DB159F /* Pods-eTagAppTests.debug.xcconfig */,
+				6A8255535FF98FB1E0812105 /* Pods-eTagAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F73F470318124AFEBB9FE17B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F19A5205736A67264E808740 /* Pods_eTagApp.framework */,
+				9F6E6A2613BFF069BB5D4C8C /* Pods_eTagApp_eTagAppUITests.framework */,
+				5E196448448F35E30C7810E0 /* Pods_eTagAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		074BB4B02AD114AD004B3648 /* eTagApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074BB4DB2AD114AF004B3648 /* Build configuration list for PBXNativeTarget "eTagApp" */;
+			buildPhases = (
+				AEAE27C2FF772F943CA0B90F /* [CP] Check Pods Manifest.lock */,
+				074BB4AD2AD114AD004B3648 /* Sources */,
+				074BB4AE2AD114AD004B3648 /* Frameworks */,
+				074BB4AF2AD114AD004B3648 /* Resources */,
+				762E3E2DC579023D38BDC137 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eTagApp;
+			productName = eTagApp;
+			productReference = 074BB4B12AD114AD004B3648 /* eTagApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		074BB4C62AD114AF004B3648 /* eTagAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074BB4DE2AD114AF004B3648 /* Build configuration list for PBXNativeTarget "eTagAppTests" */;
+			buildPhases = (
+				70624EAE225488BB4B2275C5 /* [CP] Check Pods Manifest.lock */,
+				074BB4C32AD114AF004B3648 /* Sources */,
+				074BB4C42AD114AF004B3648 /* Frameworks */,
+				074BB4C52AD114AF004B3648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074BB4C92AD114AF004B3648 /* PBXTargetDependency */,
+			);
+			name = eTagAppTests;
+			productName = eTagAppTests;
+			productReference = 074BB4C72AD114AF004B3648 /* eTagAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		074BB4D02AD114AF004B3648 /* eTagAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074BB4E12AD114AF004B3648 /* Build configuration list for PBXNativeTarget "eTagAppUITests" */;
+			buildPhases = (
+				7E7CCBC7C63C9EE3457305A6 /* [CP] Check Pods Manifest.lock */,
+				074BB4CD2AD114AF004B3648 /* Sources */,
+				074BB4CE2AD114AF004B3648 /* Frameworks */,
+				074BB4CF2AD114AF004B3648 /* Resources */,
+				905A2AE5498EE70ADF495DB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074BB4D32AD114AF004B3648 /* PBXTargetDependency */,
+			);
+			name = eTagAppUITests;
+			productName = eTagAppUITests;
+			productReference = 074BB4D12AD114AF004B3648 /* eTagAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		074BB4A92AD114AD004B3648 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					074BB4B02AD114AD004B3648 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					074BB4C62AD114AF004B3648 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 074BB4B02AD114AD004B3648;
+					};
+					074BB4D02AD114AF004B3648 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 074BB4B02AD114AD004B3648;
+					};
+				};
+			};
+			buildConfigurationList = 074BB4AC2AD114AD004B3648 /* Build configuration list for PBXProject "eTagApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 074BB4A82AD114AD004B3648;
+			productRefGroup = 074BB4B22AD114AD004B3648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				074BB4B02AD114AD004B3648 /* eTagApp */,
+				074BB4C62AD114AF004B3648 /* eTagAppTests */,
+				074BB4D02AD114AF004B3648 /* eTagAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		074BB4AF2AD114AD004B3648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074BB4C12AD114AE004B3648 /* LaunchScreen.storyboard in Resources */,
+				074BB4BE2AD114AE004B3648 /* Assets.xcassets in Resources */,
+				074BB4BC2AD114AD004B3648 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074BB4C52AD114AF004B3648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074BB4CF2AD114AF004B3648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70624EAE225488BB4B2275C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eTagAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		762E3E2DC579023D38BDC137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eTagApp/Pods-eTagApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eTagApp/Pods-eTagApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eTagApp/Pods-eTagApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E7CCBC7C63C9EE3457305A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eTagApp-eTagAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		905A2AE5498EE70ADF495DB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eTagApp-eTagAppUITests/Pods-eTagApp-eTagAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eTagApp-eTagAppUITests/Pods-eTagApp-eTagAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eTagApp-eTagAppUITests/Pods-eTagApp-eTagAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEAE27C2FF772F943CA0B90F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eTagApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074BB4AD2AD114AD004B3648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074BB4B92AD114AD004B3648 /* ViewController.swift in Sources */,
+				074BB4B52AD114AD004B3648 /* AppDelegate.swift in Sources */,
+				074BB4B72AD114AD004B3648 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074BB4C32AD114AF004B3648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074BB4CC2AD114AF004B3648 /* eTagAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074BB4CD2AD114AF004B3648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074BB4D62AD114AF004B3648 /* eTagAppUITests.swift in Sources */,
+				074BB4D82AD114AF004B3648 /* eTagAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		074BB4C92AD114AF004B3648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074BB4B02AD114AD004B3648 /* eTagApp */;
+			targetProxy = 074BB4C82AD114AF004B3648 /* PBXContainerItemProxy */;
+		};
+		074BB4D32AD114AF004B3648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074BB4B02AD114AD004B3648 /* eTagApp */;
+			targetProxy = 074BB4D22AD114AF004B3648 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		074BB4BA2AD114AD004B3648 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074BB4BB2AD114AD004B3648 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		074BB4BF2AD114AE004B3648 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074BB4C02AD114AE004B3648 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		074BB4D92AD114AF004B3648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		074BB4DA2AD114AF004B3648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		074BB4DC2AD114AF004B3648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56B2ED7E13C1BB6D5088FB4C /* Pods-eTagApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eTagApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rifqialfaizi.eTagApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		074BB4DD2AD114AF004B3648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98E24A67C080AD257C3356B /* Pods-eTagApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eTagApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rifqialfaizi.eTagApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		074BB4DF2AD114AF004B3648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2902466D2E96EE947DB159F /* Pods-eTagAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rifqialfaizi.eTagAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eTagApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eTagApp";
+			};
+			name = Debug;
+		};
+		074BB4E02AD114AF004B3648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A8255535FF98FB1E0812105 /* Pods-eTagAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rifqialfaizi.eTagAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eTagApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/eTagApp";
+			};
+			name = Release;
+		};
+		074BB4E22AD114AF004B3648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE6203729B1A95AEC7C86BE /* Pods-eTagApp-eTagAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rifqialfaizi.eTagAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eTagApp;
+			};
+			name = Debug;
+		};
+		074BB4E32AD114AF004B3648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080DCE2A1BDEBA66B136717B /* Pods-eTagApp-eTagAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rifqialfaizi.eTagAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eTagApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074BB4AC2AD114AD004B3648 /* Build configuration list for PBXProject "eTagApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074BB4D92AD114AF004B3648 /* Debug */,
+				074BB4DA2AD114AF004B3648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074BB4DB2AD114AF004B3648 /* Build configuration list for PBXNativeTarget "eTagApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074BB4DC2AD114AF004B3648 /* Debug */,
+				074BB4DD2AD114AF004B3648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074BB4DE2AD114AF004B3648 /* Build configuration list for PBXNativeTarget "eTagAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074BB4DF2AD114AF004B3648 /* Debug */,
+				074BB4E02AD114AF004B3648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074BB4E12AD114AF004B3648 /* Build configuration list for PBXNativeTarget "eTagAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074BB4E22AD114AF004B3648 /* Debug */,
+				074BB4E32AD114AF004B3648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 074BB4A92AD114AD004B3648 /* Project object */;
+}

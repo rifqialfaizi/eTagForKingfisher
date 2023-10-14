@@ -1,0 +1,6 @@
+framework module Pods_eTagApp {
+  umbrella header "Pods-eTagApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="eTagApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QWo-lN-LYL">
+                                <rect key="frame" x="0.0" y="-2" width="393" height="854"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZm-Hk-SFn">
+                                <rect key="frame" x="243" y="688" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="G9k-Lu-wz6"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.1019607843" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Hit API"/>
+                                <connections>
+                                    <action selector="hitAPIButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rw9-Hh-gpR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVF-Cy-kzM">
+                                <rect key="frame" x="16" y="706.33333333333337" width="187" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFH-1b-PD5">
+                                <rect key="frame" x="226" y="743" width="117" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="vTC-jy-nkQ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Clear Cache"/>
+                                <connections>
+                                    <action selector="clearCaheButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oP6-se-F40"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnV-bI-vYZ">
+                                <rect key="frame" x="16" y="742.66666666666663" width="190" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kVF-Cy-kzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7nk-1n-oD5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bZm-Hk-SFn" secondAttribute="trailing" constant="50" id="IUj-II-p7r"/>
+                            <constraint firstItem="YnV-bI-vYZ" firstAttribute="top" secondItem="kVF-Cy-kzM" secondAttribute="bottom" constant="16" id="Kvd-NF-yyT"/>
+                            <constraint firstItem="QWo-lN-LYL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-2" id="OKk-1I-1oi"/>
+                            <constraint firstItem="YnV-bI-vYZ" firstAttribute="leading" secondItem="kVF-Cy-kzM" secondAttribute="leading" id="Pwc-Cj-uam"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YnV-bI-vYZ" secondAttribute="bottom" constant="55" id="TNV-Il-bkO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QWo-lN-LYL" secondAttribute="trailing" id="UEK-0J-iR7"/>
+                            <constraint firstItem="bZm-Hk-SFn" firstAttribute="leading" secondItem="kVF-Cy-kzM" secondAttribute="trailing" constant="40" id="dpk-wO-pic"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rFH-1b-PD5" secondAttribute="bottom" constant="40" id="fFl-ni-NSu"/>
+                            <constraint firstItem="rFH-1b-PD5" firstAttribute="top" secondItem="bZm-Hk-SFn" secondAttribute="bottom" constant="20" id="hIp-OL-jge"/>
+                            <constraint firstAttribute="bottom" secondItem="QWo-lN-LYL" secondAttribute="bottom" id="hLk-dm-fSI"/>
+                            <constraint firstItem="rFH-1b-PD5" firstAttribute="leading" secondItem="YnV-bI-vYZ" secondAttribute="trailing" constant="20" id="jlF-Fu-PoJ"/>
+                            <constraint firstItem="QWo-lN-LYL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pec-U7-Z2z"/>
+                            <constraint firstItem="rFH-1b-PD5" firstAttribute="trailing" secondItem="bZm-Hk-SFn" secondAttribute="trailing" id="uJz-Rr-ngB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="KingfisherCacheLabel" destination="YnV-bI-vYZ" id="aoo-YU-eEd"/>
+                        <outlet property="bgImage" destination="QWo-lN-LYL" id="L7c-bK-kKs"/>
+                        <outlet property="hitAPIButton" destination="bZm-Hk-SFn" id="U8F-a6-2Kd"/>
+                        <outlet property="imageSourceLabel" destination="kVF-Cy-kzM" id="aQh-4X-unD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
