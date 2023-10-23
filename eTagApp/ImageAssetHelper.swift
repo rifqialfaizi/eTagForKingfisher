@@ -54,7 +54,7 @@ public final class ImageAssetHelper: NSObject {
                 switch result {
                 case .success(let value):
                     if value.cacheType == .none {
-                        getEtagForWcmsAsset(wcmsAssetUrl: url)
+                        getImageRequest(url: url)
                         print("✅ Image loaded from network.")
                     } else if value.cacheType == .memory {
                         print("✅ Image loaded from cache.")
@@ -91,22 +91,41 @@ public final class ImageAssetHelper: NSObject {
         return options
     }
     
-    //MARK: ALAMOFIRE ASSET
-    public static func getEtagForWcmsAsset(wcmsAssetUrl: String = "") {
-        Alamofire.request(wcmsAssetUrl, method: .head, headers: headers)
-            .validate(statusCode: 200..<300)
-            .responseJSON { response in
-            switch response.result {
-            case .success:
-                if let etag = response.response?.allHeaderFields["Etag"] as? String {
-                    self.storedEtag = etag
-                    print("✅ Image AF loaded from network \(etag)")
+    public static func getImageRequest(url: String) {
+        // Create a URL session configuration if needed
+        let configuration = URLSessionConfiguration.default
+
+        // Create a URL session with the given configuration
+        let session = URLSession(configuration: configuration)
+
+        // Create a URLRequest for the HEAD request
+        var request = URLRequest(url: URL(string: url)!)
+        request.httpMethod = "HEAD"
+        
+        // Set any additional headers if needed
+        for (key, value) in headers {
+            request.setValue(value, forHTTPHeaderField: key)
+        }
+
+        // Create a data task with the request
+        let task = session.dataTask(with: request) { data, response, error in
+            if let httpResponse = response as? HTTPURLResponse {
+                if 200 ..< 300 ~= httpResponse.statusCode {
+                    if let etag = httpResponse.allHeaderFields["Etag"] as? String {
+                        // Handle the Etag value
+                        self.storedEtag = etag
+                    }
+                } else {
+                    // Handle non-2xx status codes
+                    print("✅ Request failed with status code: \(httpResponse.statusCode)")
                 }
-                break
-            case .failure(let error):
-                print("✅ Request failed with error: \(error)")
-                break
+            } else {
+                // Handle non-HTTP responses
+                print("✅ Request failed with an unknown response")
             }
         }
+
+        // Start the data task
+        task.resume()
     }
 }
