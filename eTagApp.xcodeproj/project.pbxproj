@@ -17,6 +17,7 @@
 		074BB4D62AD114AF004B3648 /* eTagAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4D52AD114AF004B3648 /* eTagAppUITests.swift */; };
 		074BB4D82AD114AF004B3648 /* eTagAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074BB4D72AD114AF004B3648 /* eTagAppUITestsLaunchTests.swift */; };
 		595F1F5A31AD288CB28232D9 /* Pods_eTagApp_eTagAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E6A2613BFF069BB5D4C8C /* Pods_eTagApp_eTagAppUITests.framework */; };
+		B50583B82AE17E6B00377D01 /* ImageAssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50583B72AE17E6B00377D01 /* ImageAssetHelper.swift */; };
 		BE92881893FB2451AA0068C9 /* Pods_eTagApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19A5205736A67264E808740 /* Pods_eTagApp.framework */; };
 		F0E595C7834B82D139BFA462 /* Pods_eTagAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E196448448F35E30C7810E0 /* Pods_eTagAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		6A8255535FF98FB1E0812105 /* Pods-eTagAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagAppTests.release.xcconfig"; path = "Target Support Files/Pods-eTagAppTests/Pods-eTagAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F6E6A2613BFF069BB5D4C8C /* Pods_eTagApp_eTagAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTagApp_eTagAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2902466D2E96EE947DB159F /* Pods-eTagAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagAppTests.debug.xcconfig"; path = "Target Support Files/Pods-eTagAppTests/Pods-eTagAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B50583B72AE17E6B00377D01 /* ImageAssetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetHelper.swift; sourceTree = "<group>"; };
 		C98E24A67C080AD257C3356B /* Pods-eTagApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTagApp.release.xcconfig"; path = "Target Support Files/Pods-eTagApp/Pods-eTagApp.release.xcconfig"; sourceTree = "<group>"; };
 		F19A5205736A67264E808740 /* Pods_eTagApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTagApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				074BB4BD2AD114AE004B3648 /* Assets.xcassets */,
 				074BB4BF2AD114AE004B3648 /* LaunchScreen.storyboard */,
 				074BB4C22AD114AE004B3648 /* Info.plist */,
+				B50583B72AE17E6B00377D01 /* ImageAssetHelper.swift */,
 			);
 			path = eTagApp;
 			sourceTree = "<group>";
@@ -154,7 +157,6 @@
 				A2902466D2E96EE947DB159F /* Pods-eTagAppTests.debug.xcconfig */,
 				6A8255535FF98FB1E0812105 /* Pods-eTagAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B50583B82AE17E6B00377D01 /* ImageAssetHelper.swift in Sources */,
 				074BB4B92AD114AD004B3648 /* ViewController.swift in Sources */,
 				074BB4B52AD114AD004B3648 /* AppDelegate.swift in Sources */,
 				074BB4B72AD114AD004B3648 /* SceneDelegate.swift in Sources */,
