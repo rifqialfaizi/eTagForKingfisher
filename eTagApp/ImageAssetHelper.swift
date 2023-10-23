@@ -64,9 +64,8 @@ public final class ImageAssetHelper: NSObject {
                     print("✅ error fetchImage: \(error)")
                     print("✅ imgURL: \(link)")
                     imageView.kf.setImage(with: link, options: nil)
-                    imageView.layoutIfNeeded()
                     // Default Image
-                    imageView.image = placeholder
+            //        imageView.image = placeholder
                 }
             })
         } else {
@@ -94,9 +93,9 @@ public final class ImageAssetHelper: NSObject {
     
     //MARK: ALAMOFIRE ASSET
     public static func getEtagForWcmsAsset(wcmsAssetUrl: String = "") {
-        AF.request(wcmsAssetUrl, method: .head, headers: headers)
+        Alamofire.request(wcmsAssetUrl, method: .head, headers: headers)
             .validate(statusCode: 200..<300)
-            .response { response in
+            .responseJSON { response in
             switch response.result {
             case .success:
                 if let etag = response.response?.allHeaderFields["Etag"] as? String {

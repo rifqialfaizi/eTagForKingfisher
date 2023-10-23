@@ -6,7 +6,7 @@ target 'eTagApp' do
   use_frameworks!
 
   # Pods for eTagApp
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.8.2'
   pod 'Kingfisher'
   pod 'netfox'
 

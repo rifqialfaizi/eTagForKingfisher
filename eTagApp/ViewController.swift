@@ -34,66 +34,7 @@ class ViewController: UIViewController, ImageDownloaderDelegate {
         super.viewDidLoad()
         self.imageSourceLabel.text = ""
         self.KingfisherCacheLabel.text = ""
-//        downloader.delegate = self
     }
-    
-//    func getImageRequest() {
-//        AF.request(imageURL, method: .head, headers: headers)
-//            .validate(statusCode: 200..<300)
-//            .response { response in
-//                switch response.result {
-//                case .success:
-//                    if let etag = response.response?.allHeaderFields["Etag"] as? String {
-//                        self.storedETag = etag
-//                        self.imageSourceLabel.text = "Image AF loaded from network"
-//                    }
-//                case .failure(let error):
-//                    print("✅ Request failed with error: \(error)")
-//                }
-//            }
-//    }
-    
-//    func imageDownloader(_ downloader: ImageDownloader, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
-//           // Check if the response is an HTTP response (in case of non-HTTP responses)
-//           guard let httpResponse = response as? HTTPURLResponse else {
-//               completionHandler(.allow)
-//               return
-//           }
-//
-//           if let etag = httpResponse.allHeaderFields["Etag"] as? String {
-//               self.storedETag = etag
-//               print("✅ etag inside imageDownloader: \(etag)")
-//           }
-//
-//           // Allow the response to proceed
-//           completionHandler(.allow)
-//    }
-    
-//    func loadImageWithKingfisher() {
-//        let etag = storedETag ?? ""
-//        let requestModifier = MyRequestModifier(etag: etag)
-//            let options: KingfisherOptionsInfo = [.forceRefresh, .requestModifier(requestModifier)]
-//
-//            bgImage.kf.setImage(with: imageURL, options: options, completionHandler: { result in
-//                switch result {
-//                case .success(let value):
-//                    // Image loaded successfully
-//                    if value.cacheType == .none {
-////                        self.getImageRequest()
-//                        print("✅ Image loaded from network.")
-//                        self.KingfisherCacheLabel.text = "Image KF loaded from network"
-//                    } else if value.cacheType == .memory {
-//                        print("✅ Image loaded from cache.")
-//                        self.KingfisherCacheLabel.text = "Image KF loaded from cache"
-//                    }
-//                case .failure(let error):
-//                    print("✅ error: \(error)")
-//                    self.bgImage.kf.setImage(with: self.imageURL, options: nil)
-//                    self.KingfisherCacheLabel.text = "Image KF loaded from cache"
-//                    self.imageSourceLabel.text = ""
-//                }
-//            })
-//    }
     
     func clearKingfisherCache() {
         KingfisherManager.shared.cache.clearCache()
@@ -102,7 +43,6 @@ class ViewController: UIViewController, ImageDownloaderDelegate {
     }
     
     @IBAction func hitAPIButtonTapped(_ sender: UIButton) {
-//        loadImageWithKingfisher()
         ImageAssetHelper.fetchImageIn2(bgImage, url: imageURL, placeholder: nil)
     }
     
